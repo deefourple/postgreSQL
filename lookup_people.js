@@ -15,7 +15,7 @@ const queryReq = `
     SELECT *
     FROM famous_people
     WHERE first_name LIKE $1::text
-    OR last_name like $1::text
+    OR last_name LIKE $1::text
   `;
 client.connect((err) => {
   if (err) {
