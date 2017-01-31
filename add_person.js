@@ -17,4 +17,5 @@ const dob = process.argv[4];
 
 knex("famous_people").insert([{first_name: first, last_name: last, birthdate: dob}]).then(function(result) {
   console.log(result);
+  process.exit();
 });

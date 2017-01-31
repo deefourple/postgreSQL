@@ -25,4 +25,7 @@ knex.select().from('famous_people')
                   for (let i = 0; i < result.length; i++ ){
                     console.log(`- ${i + 1}: ${result[i].first_name} ${result[i].last_name}, born '${result[i].birthdate.getFullYear()}-${result[i].birthdate.getMonth() + 1}-${result[i].birthdate.getDate()}'`);
                   }
+                  process.exit();
 });
+
+
