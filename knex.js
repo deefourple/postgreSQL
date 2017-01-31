@@ -27,14 +27,3 @@ knex.select().from('famous_people')
                   }
                   process.exit();
 });
-
-
-//const db = knex.select().then(etc..)
-//console.log(db.toSQL().sql);
-
-//knex.schema.createTable('artists', function(table) {
-//   table.increments('id');
-//   table.string('name');
-// }).then(function() {
-//   return db.insert()
-// })
